@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción - Electromecánica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icono.png" >
+</head>
+
+<body>
+
+    <div class="formulario">
+        <h2>Registro Online</h2>
+        <p class="subtitulo">Completá el formulario para asegurar tu cupo en Curso de Electromecánica.</p>
+
+        <form name="formularioInscripcion" action="mailto:nachoparedes82@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div class="grupo-input">
+                    <label for="nombre">Nombre completo:</label>
+                    <input  class="texto" type="text" id="nombre" name="nombre" placeholder="Ej.: Mateo Rodriguez" autofocus required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="nombre">Numero de DNI</label>
+                    <input class="texto" type="text" id="dni" name="dni" placeholder="Ej.: 20456789" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">Correo electrónico:</label>
+                    <input class="texto" type="email" id="email" name="email" placeholder="Ej.: meteordz@gmail.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="telefono">Teléfono:</label>
+                    <input class="texto" type="tel" id="telefono" name="telefono" placeholder="Ej.: 291-1234567" required>
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Datos del curso</legend>
+
+                <div class="grupo-input">
+                    <label for="estudios">Nivel de estudios:</label>
+                    <select class="texto" id="estudios" name="nivel_estudios" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="secundario">Secundario</option>
+                        <option value="terciario">Terciario / Técnico</option>
+                        <option value="universitario">Universitario</option>
+                    </select>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Turno de preferencia:</label>
+                    <div class="opciones-radio">
+                        <input type="radio" id="manana" name="turno" value="mañana" required>
+                        <label for="manana">Mañana</label>
+
+                        <input type="radio" id="tarde" name="turno" value="tarde">
+                        <label for="tarde">Tarde</label>
+
+                        <input type="radio" id="noche" name="turno" value="noche">
+                        <label for="noche">Noche</label>
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Modalidad de cursada:</label>
+                    <div class="opciones-radio">
+                        <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+                        <label for="presencial">Presencial</label>
+
+                        <input type="radio" id="virtual" name="modalidad" value="virtual">
+                        <label for="virtual">Virtual</label>
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="archivo">Adjuntar Comprobante(Foto o PDF):</label>
+                    <input type="file" id="archivo" name="comprobante_dni" accept=".jpg, .jpeg, .png, .pdf" required>
+                </div>
+            </fieldset>
+
+            <input class="boton" type="submit" value="Enviar Inscripción">
+        </form>
+    </div>
+
+</body>
+</html>
