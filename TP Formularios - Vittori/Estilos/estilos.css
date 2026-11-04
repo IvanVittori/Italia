@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #263445;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #173b65;
+    color: white;
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.encabezado p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e1eaf5;
+}
+
+/* Formulario */
+form {
+    background-color: gainsboro;
+    width:auto;
+    border-radius: 1em;
+    border-style:double;
+    border-color:gray;
+    padding: 1em;
+}
+
+.campo {
+    margin-bottom: 22px;
+    flex: 1;
+    min-width: 0;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #263445;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto al seleccionar un campo */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2869a6;
+    box-shadow: 0 0 0 3px rgba(40, 105, 166, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Filas para fechas y horarios */
+.fila {
+    display: flex;
+    gap: 18px;
+}
+
+/* Requerimientos especiales */
+.requerimientos {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 24px;
+}
+
+.requerimientos legend {
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.opcion input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #2166a5;
+    cursor: pointer;
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2166a5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #174a7a;
+}
+
+/* Nota informativa */
+.nota {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+/* Diseño adaptable a celulares */
+@media (max-width: 520px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .encabezado {
+        padding: 25px 16px;
+    }
+
+    .encabezado h1 {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 22px 18px;
+    }
+
+    .fila {
+        flex-direction: column;
+        gap: 0;
+    }
+}

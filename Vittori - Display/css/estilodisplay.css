@@ -1,0 +1,28 @@
+.caja{
+    background-color: red;
+    border: black;
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bloque{display:black;    
+}
+
+.enlinea {
+    display: inline;
+}
+
+.bloqueenlinea{
+    display: inline-block;
+}
+
+.invisible{
+    display: none;
+}
+
+.no_visible{
+    visibility: hidden;
+}

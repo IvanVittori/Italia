@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2eee5;
+  color: #222;
+}
+
+header {
+  background-color: #3b2415;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  border-bottom: 2px solid #3b2415;
+  padding-bottom: 8px;
+}
+
+/* Clase común para todos los cuadros */
+.cuadro {
+  width: 100%;
+  min-height: 180px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #333;
+  font-weight: bold;
+}
+
+/* La imagen ocupa todo el cuadro */
+.cuadro img {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+}
+
+/* Clases propias de cada cuadro */
+.cuadro-a1 {
+  background-color: #c99b62;
+  border-color: #5c3219;
+}
+
+.cuadro-a2 {
+  background-color: #d8b08c;
+  border-color: #8b4513;
+}
+
+.cuadro-a3 {
+  background-color: #b7a58a;
+  border-color: #654321;
+}
+
+.cuadro-a4 {
+  background-color: #e0c097;
+  border-color: #a0522d;
+}
+
+.cuadro-b1 {
+  background-color: #7c9a92;
+  border-color: #29433d;
+}
+
+.cuadro-b2 {
+  background-color: #a8b8a5;
+  border-color: #40513d;
+}
+
+.cuadro-b3 {
+  background-color: #c4d0b2;
+  border-color: #65754d;
+}
+
+.cuadro-b4 {
+  background-color: #9b8269;
+  border-color: #594534;
+}
+
+.cuadro-b5 {
+  background-color: #d3bfa7;
+  border-color: #80644a;
+}
+
+.cuadro-b6 {
+  background-color: #88705b;
+  border-color: #49382c;
+}
+
+.cuadro-c1 {
+  background-color: #b8755c;
+  border-color: #692f22;
+}
+
+.cuadro-c2 {
+  background-color: #d29b7d;
+  border-color: #8b4935;
+}
+
+.cuadro-c3 {
+  background-color: #a85c45;
+  border-color: #57291f;
+}
+
+footer {
+  background-color: #3b2415;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+/* =========================
+   MEDIA QUERY
+   ========================= */
+
+@media screen and (min-width: 768px) {
+
+  main {
+    width: 90%;
+    max-width: 1100px;
+  }
+
+  /* Los cuadros se colocan uno al lado del otro */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  section h2 {
+    width: 100%;
+  }
+
+  .cuadro {
+    width: calc(50% - 10px);
+    margin-bottom: 0;
+  }
+}
+
+
+/* Pantallas grandes */
+
+@media screen and (min-width: 1024px) {
+
+  .cuadro {
+    width: calc(25% - 12px);
+  }
+
+  /* La sección B tiene 6 cuadros */
+  section:nth-of-type(2) .cuadro {
+    width: calc(33.333% - 10px);
+  }
+
+  /* La sección C tiene 3 cuadros */
+  section:nth-of-type(3) .cuadro {
+    width: calc(33.333% - 10px);
+  }
+}
